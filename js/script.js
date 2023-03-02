@@ -24,19 +24,19 @@ function CalcularIMC() {
     
     if (resultado < 18.5) {
       document.querySelector(".magreza").style.backgroundColor =
-        "rgb(147, 230, 230)";
+        "#F9BF8F";
     } else if (resultado >= 18.5 && resultado <= 24.9) {
       document.querySelector(".normal").style.backgroundColor =
-        "rgb(147, 230, 230)";
+        "#00AF50";
     } else if (resultado >= 25.0 && resultado <= 29.9) {
       document.querySelector(".sobrepeso").style.backgroundColor =
-        "rgb(147, 230, 230)";
+        "#F9BF8F";
     } else if (resultado >= 30.0 && resultado <= 39.9) {
       document.querySelector(".obesidade").style.backgroundColor =
-        "rgb(147, 230, 230)";
+        "#EA3B43";
     } else if (resultado >= 40.0) {
       document.querySelector(".obesidadegrave").style.backgroundColor =
-        "rgb(147, 230, 230)";
+        "#FE0000";
     }
   }
   
