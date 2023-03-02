@@ -1,5 +1,6 @@
 function CalcularIMC() {
 
+    const resultado1 = document.querySelector(".resultadocalculo")
     const peso = parseFloat(document.getElementById("peso").value);
     const altura = parseFloat(document.getElementById("altura").value);
   
@@ -25,18 +26,23 @@ function CalcularIMC() {
     if (resultado < 18.5) {
       document.querySelector(".magreza").style.backgroundColor =
         "#F9BF8F";
+        resultado1.style.backgroundColor ="#F9BF8F"
     } else if (resultado >= 18.5 && resultado <= 24.9) {
       document.querySelector(".normal").style.backgroundColor =
         "#00AF50";
+        resultado1.style.backgroundColor = "#00AF50"
     } else if (resultado >= 25.0 && resultado <= 29.9) {
       document.querySelector(".sobrepeso").style.backgroundColor =
         "#F9BF8F";
+        resultado1.style.backgroundColor = "#F9BF8F"
     } else if (resultado >= 30.0 && resultado <= 39.9) {
       document.querySelector(".obesidade").style.backgroundColor =
         "#EA3B43";
+        resultado1.style.backgroundColor =  "#EA3B43"
     } else if (resultado >= 40.0) {
       document.querySelector(".obesidadegrave").style.backgroundColor =
         "#FE0000";
+        resultado1.style.backgroundColor ="#FE0000"
     }
   }
   

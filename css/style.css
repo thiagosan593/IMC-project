@@ -121,12 +121,13 @@ input::-webkit-inner-spin-button {
 button {
     border-radius: 10px;
     border-style: solid;
-    background-color: #747171;
+    transition: .5;
+
 }
 
 button:hover {
     background-color: #fff;
-    color: rgb(147, 230, 230);
+    color: #000
 
 
 }
